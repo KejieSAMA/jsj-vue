@@ -1,0 +1,227 @@
+[
+    {
+        "english": "apple",
+        "englishCn": "苹果",
+        "enClass": "n"
+    },
+    {
+        "english": "banana",
+        "englishCn": "香蕉",
+        "enClass": "n"
+    },
+    {
+        "english": "dog",
+        "englishCn": "狗",
+        "enClass": "n"
+    },
+    {
+        "english": "elephant",
+        "englishCn": "大象",
+        "enClass": "n"
+    },
+    {
+        "english": "fish",
+        "englishCn": "鱼",
+        "enClass": "n"
+    },
+    {
+        "english": "grape",
+        "englishCn": "葡萄",
+        "enClass": "n"
+    },
+    {
+        "english": "horse",
+        "englishCn": "马",
+        "enClass": "n"
+    },
+    {
+        "english": "ice cream",
+        "englishCn": "冰淇淋",
+        "enClass": "n"
+    },
+    {
+        "english": "juice",
+        "englishCn": "果汁",
+        "enClass": "n"
+    },
+    {
+        "english": "kangaroo",
+        "englishCn": "袋鼠",
+        "enClass": "n"
+    },
+    {
+        "english": "lion",
+        "englishCn": "狮子",
+        "enClass": "n"
+    },
+    {
+        "english": "monkey",
+        "englishCn": "猴子",
+        "enClass": "n"
+    },
+    {
+        "english": "nurse",
+        "englishCn": "护士",
+        "enClass": "n"
+    },
+    {
+        "english": "orange",
+        "englishCn": "橘子",
+        "enClass": "n"
+    },
+    {
+        "english": "pineapple",
+        "englishCn": "菠萝",
+        "enClass": "n"
+    },
+    {
+        "english": "queen",
+        "englishCn": "皇后",
+        "enClass": "n"
+    },
+    {
+        "english": "rabbit",
+        "englishCn": "兔子",
+        "enClass": "n"
+    },
+    {
+        "english": "snake",
+        "englishCn": "蛇",
+        "enClass": "n"
+    },
+    {
+        "english": "tiger",
+        "englishCn": "狮子",
+        "enClass": "n"
+    },
+    {
+        "english": "umbrella",
+        "englishCn": "雨伞",
+        "enClass": "n"
+    },
+    {
+        "english": "van",
+        "englishCn": "货车",
+        "enClass": "n"
+    },
+    {
+        "english": "whale",
+        "englishCn": "鲸鱼",
+        "enClass": "n"
+    },
+    {
+        "english": "xylophone",
+        "englishCn": "木琴",
+        "enClass": "n"
+    },
+    {
+        "english": "yogurt",
+        "englishCn": "酸奶",
+        "enClass": "n"
+    },
+    {
+        "english": "zebra",
+        "englishCn": "斑马",
+        "enClass": "n"
+    },
+    {
+        "english": "airplane",
+        "englishCn": "飞机",
+        "enClass": "n"
+    },
+    {
+        "english": "ball",
+        "englishCn": "球",
+        "enClass": "n"
+    },
+    {
+        "english": "car",
+        "englishCn": "车",
+        "enClass": "n"
+    },
+    {
+        "english": "doll",
+        "englishCn": "玩偶",
+        "enClass": "n"
+    },
+    {
+        "english": "egg",
+        "englishCn": "鸡蛋",
+        "enClass": "n"
+    },
+    {
+        "english": "flower",
+        "englishCn": "花",
+        "enClass": "n"
+    },
+    {
+        "english": "guitar",
+        "englishCn": "吉他",
+        "enClass": "n"
+    },
+    {
+        "english": "hat",
+        "englishCn": "帽子",
+        "enClass": "n"
+    },
+    {
+        "english": "insect",
+        "englishCn": "昆虫",
+        "enClass": "n"
+    },
+    {
+        "english": "jacket",
+        "englishCn": "夹克",
+        "enClass": "n"
+    },
+    {
+        "english": "kite",
+        "englishCn": "风筝",
+        "enClass": "n"
+    },
+    {
+        "english": "lemon",
+        "englishCn": "柠檬",
+        "enClass": "n"
+    },
+    {
+        "english": "mouse",
+        "englishCn": "老鼠",
+        "enClass": "n"
+    },
+    {
+        "english": "nest",
+        "englishCn": "鸟巢",
+        "enClass": "n"
+    },
+    {
+        "english": "pencil",
+        "englishCn": "铅笔",
+        "enClass": "n"
+    },
+    {
+        "english": "robot",
+        "englishCn": "机器人",
+        "enClass": "n"
+    },
+    {
+        "english": "sun",
+        "englishCn": "太阳",
+        "enClass": "n"
+    },
+    {
+        "english": "table",
+        "englishCn": "桌子",
+        "enClass": "n"
+    },
+    {
+        "english": "violin",
+        "englishCn": "小提琴",
+        "enClass": "n"
+    },
+    {
+        "english": "watermelon",
+        "englishCn": "西瓜",
+        "enClass": "n"
+    }
+]

@@ -1,0 +1,167 @@
+[
+    {
+        "english": "yak",
+        "englishCn": "牦牛",
+        "enClass": "n"
+    },
+    {
+        "english": "astronaut",
+        "englishCn": "宇航员",
+        "enClass": "n"
+    },
+    {
+        "english": "baker",
+        "englishCn": "面包师",
+        "enClass": "n"
+    },
+    {
+        "english": "chef",
+        "englishCn": "厨师",
+        "enClass": "n"
+    },
+    {
+        "english": "doctor",
+        "englishCn": "医生",
+        "enClass": "n"
+    },
+    {
+        "english": "engineer",
+        "englishCn": "工程师",
+        "enClass": "n"
+    },
+    {
+        "english": "firefighter",
+        "englishCn": "消防员",
+        "enClass": "n"
+    },
+    {
+        "english": "gardener",
+        "englishCn": "园丁",
+        "enClass": "n"
+    },
+    {
+        "english": "hairdresser",
+        "englishCn": "理发师",
+        "enClass": "n"
+    },
+    {
+        "english": "ice cream vendor",
+        "englishCn": "冰淇淋摊贩",
+        "enClass": "n"
+    },
+    {
+        "english": "journalist",
+        "englishCn": "记者",
+        "enClass": "n"
+    },
+    {
+        "english": "king",
+        "englishCn": "王",
+        "enClass": "n"
+    },
+    {
+        "english": "lawyer",
+        "englishCn": "律师",
+        "enClass": "n"
+    },
+    {
+        "english": "musician",
+        "englishCn": "音乐家",
+        "enClass": "n"
+    },
+    {
+        "english": "optician",
+        "englishCn": "眼镜商",
+        "enClass": "n"
+    },
+    {
+        "english": "painter",
+        "englishCn": "画家",
+        "enClass": "n"
+    },
+    {
+        "english": "receptionist",
+        "englishCn": "接待员",
+        "enClass": "n"
+    },
+    {
+        "english": "scientist",
+        "englishCn": "科学家",
+        "enClass": "n"
+    },
+    {
+        "english": "teacher",
+        "englishCn": "教师",
+        "enClass": "n"
+    },
+    {
+        "english": "undertaker",
+        "englishCn": "承办人",
+        "enClass": "n"
+    },
+    {
+        "english": "veterinarian",
+        "englishCn": "兽医",
+        "enClass": "n"
+    },
+    {
+        "english": "waiter/waitress",
+        "englishCn": "服务员/女服务员",
+        "enClass": "n"
+    },
+    {
+        "english": "x-ray technician",
+        "englishCn": "放射线技术员",
+        "enClass": "n"
+    },
+    {
+        "english": "yacht captain",
+        "englishCn": "游艇船长",
+        "enClass": "n"
+    },
+    {
+        "english": "zookeeper",
+        "englishCn": "动物园管理员",
+        "enClass": "n"
+    },
+    {
+        "english": "basketball player",
+        "englishCn": "篮球运动员",
+        "enClass": "n"
+    },
+    {
+        "english": "coach",
+        "englishCn": "教练",
+        "enClass": "n"
+    },
+    {
+        "english": "football player",
+        "englishCn": "足球运动员",
+        "enClass": "n"
+    },
+    {
+        "english": "golfer",
+        "englishCn": "球员",
+        "enClass": "n"
+    },
+    {
+        "english": "hockey player",
+        "englishCn": "曲棍球运动员",
+        "enClass": "n"
+    },
+    {
+        "english": "ice skater",
+        "englishCn": "溜冰运动员",
+        "enClass": "n"
+    },
+    {
+        "english": "judo athlete",
+        "englishCn": "柔道运动员",
+        "enClass": "n"
+    },
+    {
+        "english": "king/queen",
+        "englishCn": "王/王后",
+        "enClass": "n"
+    }
+]
