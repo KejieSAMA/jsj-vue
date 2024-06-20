@@ -39,7 +39,7 @@ import RegAccout from '../icon/RegAccout.vue'
                 <div class="tip">again password*(必填)</div>
                 <div class="fillBox">
                     <password />
-                    <input type="text" v-model="user_pwdaG" name="pwd" placeholder="请再次输入相同的密码" ref="r_pwd2"
+                    <input type="password" v-model="user_pwdaG" name="pwd" placeholder="请再次输入相同的密码" ref="r_pwd2"
                         class="input-item">
                 </div>
             </div>

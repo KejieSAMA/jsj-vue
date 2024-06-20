@@ -14,6 +14,9 @@ import userHomePage from '../views/homePage.vue'
 import ReadSenSelect from '../views/ReadSenSelect.vue'
 import tieziPage from '../views/communityPage.vue'
 import Community from '../views/schoolCommunity.vue'
+import shopMyPage from '../views/shopPage.vue'
+import shopMyPageInfo from '../views/shopPageInfo.vue'
+import shopMyCartPage from '../views/shopCartPage.vue'
 
 const routes = [
   {
@@ -48,6 +51,21 @@ const routes = [
     path: '/homePage',
     name: 'homePage',
     component: userHomePage
+  },
+  {
+    path: '/shopPage',
+    name: 'shopPage',
+    component: shopMyPage
+  },
+  {
+    path: '/shopPageInfo',
+    name: 'shopPageInfo',
+    component: shopMyPageInfo
+  },
+  {
+    path: '/shopCartPage',
+    name: 'shopCartPage',
+    component: shopMyCartPage
   },
   {
     path: '/enList',

@@ -39,6 +39,12 @@
             <router-link href="" :class="{ 'navc': true, 'red': param === 'isUserHomePage' }" :to="{
                 path: '/homepage'
             }">个人</router-link>
+            <router-link href="" :class="{ 'navc': true, 'red': param === 'isshopPage' }" :to="{
+                path: '/shopPage'
+            }">商城</router-link>
+            <router-link href="" :class="{ 'navc': true, 'red': param === 'isshopCartPage' }" :to="{
+                path: '/shopCartPage'
+            }">购物车</router-link>
 
             <div class="userItem">
                 <div class="userImg"></div>

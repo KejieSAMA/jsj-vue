@@ -25,7 +25,7 @@ import backIcon from "@/icon/back.vue"
                 <div class="tip">password*(必填)</div>
                 <div class="fillBox">
                     <password />
-                    <input type="text" v-model="user_pwd" name="pwd" placeholder="请输入密码" class="input-item">
+                    <input type="password" v-model="user_pwd" name="pwd" placeholder="请输入密码" class="input-item">
                 </div>
             </div>
             <button @click="UserLogin" class="login-button" type='button'>确定登录</button>
