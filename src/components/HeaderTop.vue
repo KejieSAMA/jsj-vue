@@ -28,13 +28,13 @@
         <div v-else class="LoginStats">
             <div>
                 <router-link href="" :class="{ 'navc': true, 'red': param === 'isLearnView' }" :to="{
-                path: '/learn'
-            }">学习</router-link>
+                    path: '/learn'
+                }">学习</router-link>
             </div>
             <div>
                 <router-link href="" :class="{ 'navc': true, 'red': param === 'isEnList' }" :to="{
-                path: '/enList'
-            }">词库</router-link>
+                    path: '/enList'
+                }">咨询</router-link>
             </div>
             <router-link href="" :class="{ 'navc': true, 'red': param === 'isUserHomePage' }" :to="{
                 path: '/homepage'

@@ -5,11 +5,11 @@ import HeaderTop from "@/components/HeaderTop.vue";
 
 <template>
   <HeaderTop :param="param" />
-  <button class="chushihua" @click="LoadWord">词库初始化</button>
+  <!-- <button class="chushihua" @click="LoadWord">词库初始化</button> -->
   <div class="Item">
-    <div class="App-name">校英智学</div>
-    <div class="App-introduce">基于Vue搭建的校园学习平台</div>
-    <div class="App-introduce2">易学易用在校与他人共同学习</div>
+    <div class="App-name">基于云计算的在线教育资源共享平台的设计与实现</div>
+    <div class="App-introduce">基于Vue搭建的校园平台</div>
+    <div class="App-introduce2">易学易用与他人共同学习</div>
   </div>
 </template>
 
@@ -30,7 +30,7 @@ import HeaderTop from "@/components/HeaderTop.vue";
 
 .App-name {
   margin-top: 100px;
-  font-size: 106px;
+  font-size: 60px;
 }
 
 .Item {
@@ -40,7 +40,7 @@ import HeaderTop from "@/components/HeaderTop.vue";
 }
 
 .Item>div {
-  width: 500px;
+  width: 1000px;
 }
 </style>
 
