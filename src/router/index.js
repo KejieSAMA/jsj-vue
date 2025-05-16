@@ -17,6 +17,13 @@ import Community from '../views/schoolCommunity.vue'
 import shopMyPage from '../views/shopPage.vue'
 import shopMyPageInfo from '../views/shopPageInfo.vue'
 import shopMyCartPage from '../views/shopCartPage.vue'
+import EditProfile from '@/views/EditProfile.vue'
+import ManagementBackground from '@/views/ManagementBackground.vue'
+import UserProfile from '@/views/UserProfile.vue'
+import PostMange from '@/views/PostMange.vue'
+import UserMange from '@/views/UserMange.vue'
+import DataDashboard from '@/views/DataDashboard.vue'
+import security from '@/views/security.vue'
 
 const routes = [
   {
@@ -112,6 +119,43 @@ const routes = [
     name: 'useRegister',
     component: UserRegisterView
   },
+  {
+    path: '/edit-profile',
+    name: 'editProfile',
+    component: EditProfile
+  },
+  {
+    path: '/management',
+    name: 'management',
+    component: ManagementBackground,
+    children: [
+      {
+        path: 'user-profile',
+        name: 'UserProfile',
+        component: UserProfile
+      },
+      {
+        path: 'topics',
+        name: 'PostMange',
+        component: PostMange
+      }, 
+      {
+        path: 'users',
+        name: 'UserMange',
+        component: UserMange
+      }, 
+      {
+        path: 'DataPanel',
+        name: 'DataDashboard',
+        component: DataDashboard
+      },
+      {
+        path: 'security',
+        name: 'security',
+        component: security
+      }
+    ]
+  }
 ]
 
 const router = createRouter({

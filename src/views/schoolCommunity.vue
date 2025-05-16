@@ -10,8 +10,18 @@ import anIcon from "@/icon/anIcon.vue"
         <div class="announcement">
             <anIcon />
             <div class="anInfo">
-                欢迎加入 "校英智学"平台 平台将不定期开展各种活动
+                这是一个公告示例
             </div>
+        </div>
+        <div class="search-box">
+            <el-input v-model="searchQuery" placeholder="搜索主题名称/内容" clearable @input="handleSearch"
+                class="search-input">
+                <template #prefix>
+                    <el-icon>
+                        <Search />
+                    </el-icon>
+                </template>
+            </el-input>
         </div>
         <div class="posts-box">
             <div>主题列表</div>
@@ -37,9 +47,13 @@ import anIcon from "@/icon/anIcon.vue"
                     <div class="ohter-info2">1</div>
                 </div>
             </div>
+            <div v-if="filteredPosts.length === 0" class="empty-tips">
+                没有找到包含 "{{ searchQuery }}" 的主题
+                <el-button type="text" @click="searchQuery = ''">清除搜索条件</el-button>
+            </div>
             <div class="post-class2">普通主题</div>
             <div class="line"></div>
-            <div v-for="entry in Posts">
+            <div v-for="entry in filteredPosts" :key="entry.id">
                 <div class="post-item">
                     <div class="avatar"></div>
                     <div class="post-name-box">
@@ -58,7 +72,7 @@ import anIcon from "@/icon/anIcon.vue"
                         <div class="post-name">
                             <router-link :to="{ path: '/community/Page', query: { PostId: entry.id } }"
                                 :class="{ 'navc': true, 'red': param === 'isCommunity', 'post-name-go': true }">
-                                {{entry.postName}}
+                                {{ entry.postName }}
                             </router-link>
                         </div>
 
@@ -77,8 +91,7 @@ import anIcon from "@/icon/anIcon.vue"
                     </div>
                 </div>
             </div>
-
-            <div class="post-item">
+            <!--<div class="post-item">
                 <div class="avatar"></div>
                 <div class="post-name-box">
                     <div class="post-class-id1">讨论</div>
@@ -115,15 +128,16 @@ import anIcon from "@/icon/anIcon.vue"
                     </div>
                     <div class="ohter-info2">10086</div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </template>
 
 <style scoped>
-.post-name-go{
+.post-name-go {
     text-decoration: none;
 }
+
 .ohter-info-box {
     display: flex;
     align-items: center
@@ -289,6 +303,34 @@ import anIcon from "@/icon/anIcon.vue"
     background: rgb(173, 216, 230, 0.25);
     height: 1000px;
 }
+
+.post-name {
+    transition: all 0.3s ease;
+}
+
+.post-name:hover {
+    transform: translateX(5px);
+    color: #2175f3;
+}
+
+/* 添加搜索框样式 */
+.search-box {
+    margin: 20px 300px;
+    width: 500px;
+}
+
+.search-input {
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 调整现有布局 */
+.posts-box {
+    margin: 20px auto;
+    /* 改为居中 */
+    width: 80%;
+    /* 响应式宽度 */
+}
 </style>
 
 <script>
@@ -298,9 +340,32 @@ import axios from 'axios'
 export default {
     data() {
         return {
+            searchQuery: '',
             param: 'isCommunity',
             userToken: '',
-            Posts: []
+            Posts: [],
+            rawPosts: [],
+            debounceTimer: null,
+        }
+    },
+    computed: {
+        filteredPosts() {
+            if (!this.searchQuery) return this.rawPosts;
+            const query = this.searchQuery.toLowerCase();
+            return this.rawPosts.filter(post => {
+                // 包含标签搜索（例如 #求助）
+                if (query.startsWith('#')) {
+                    const tag = query.slice(1);
+                    return post.postClass.includes(tag);
+                }
+                // 常规搜索
+                return [
+                    post.postName,
+                    post.postClass,
+                    post.author,
+                    post.contentPreview
+                ].some(text => text?.toLowerCase().includes(query));
+            });
         }
     },
     async mounted() {
@@ -317,6 +382,15 @@ export default {
                 url: 'http://localhost:8000/posts/getPosts'
             })
             this.Posts = res.data.result;
+
+            this.rawPosts = res.data.result;  // 存储原始数据
+            this.Posts = res.data.result;     // 保持原有引用
+        },
+        handleSearch() {
+            clearTimeout(this.debounceTimer);
+            this.debounceTimer = setTimeout(() => {
+                this.Posts = this.filteredPosts;
+            }, 300);
         }
     }
 }
